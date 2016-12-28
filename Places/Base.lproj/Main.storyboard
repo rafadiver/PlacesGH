@@ -609,7 +609,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="sle-3Y-MWn">
-                        <barButtonItem key="leftBarButtonItem" title="Item" systemItem="cancel" id="BPZ-O5-3Xi">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="cancel" id="BPZ-O5-3Xi">
                             <connections>
                                 <segue destination="dfj-jA-fX0" kind="unwind" identifier="unwindToMainViewController" unwindAction="unwindToMainViewControllerWithSegue:" id="4WM-3v-K4i"/>
                             </connections>

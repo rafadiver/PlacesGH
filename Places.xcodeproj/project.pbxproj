@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		081133A81E1366E600EDD0A3 /* Places.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 081133A61E1366E600EDD0A3 /* Places.xcdatamodeld */; };
 		082B1C891DFCB71200DE48D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B1C881DFCB71200DE48D9 /* AppDelegate.swift */; };
 		082B1C8B1DFCB71200DE48D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 082B1C8A1DFCB71200DE48D9 /* ViewController.swift */; };
 		082B1C8E1DFCB71200DE48D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 082B1C8C1DFCB71200DE48D9 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		081133A71E1366E600EDD0A3 /* Places.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Places.xcdatamodel; sourceTree = "<group>"; };
 		082B1C851DFCB71200DE48D9 /* Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Places.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		082B1C881DFCB71200DE48D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		082B1C8A1DFCB71200DE48D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 				08C3C2921DFCBAED00F9D45F /* PlaceCell.swift */,
 				082B1C8F1DFCB71200DE48D9 /* Assets.xcassets */,
 				087ADE8F1E0CDAE3002B341F /* AddPlaceViewController.swift */,
+				081133A61E1366E600EDD0A3 /* Places.xcdatamodeld */,
 				08DF930C1DFDB5450038C7B6 /* MapViewController.swift */,
 				082B1C911DFCB71200DE48D9 /* LaunchScreen.storyboard */,
 				082B1C941DFCB71200DE48D9 /* Info.plist */,
@@ -184,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				087ADE901E0CDAE3002B341F /* AddPlaceViewController.swift in Sources */,
+				081133A81E1366E600EDD0A3 /* Places.xcdatamodeld in Sources */,
 				08C3C2931DFCBAED00F9D45F /* PlaceCell.swift in Sources */,
 				082B1C8B1DFCB71200DE48D9 /* ViewController.swift in Sources */,
 				08C3C2991DFCBB9800F9D45F /* ReviewViewController.swift in Sources */,
@@ -360,6 +364,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		081133A61E1366E600EDD0A3 /* Places.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				081133A71E1366E600EDD0A3 /* Places.xcdatamodel */,
+			);
+			currentVersion = 081133A71E1366E600EDD0A3 /* Places.xcdatamodel */;
+			path = Places.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 082B1C7D1DFCB71100DE48D9 /* Project object */;
 }

@@ -18,7 +18,7 @@ class ViewController: UITableViewController { /*UIViewController, UITableViewDat
         
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
-      
+      /*
         var place = Place(name: "Alexanderplatz", type: "Plaza", location: "Alexanderstraße 4 10178 Berlin Deutschland", image: #imageLiteral(resourceName: "alexanderplatz"), telefone: "555" , website: "www.sdsdf.com")
         places.append(place)
     
@@ -47,7 +47,7 @@ class ViewController: UITableViewController { /*UIViewController, UITableViewDat
         places.append(place)
         
         place = Place(name: "Catedral de Mayorca" , type: "Catedral", location: "La Seu Plaza de la Seu 5 07001 Palma Baleares España", image: #imageLiteral(resourceName: "mallorca"), telefone: "555" , website: "www.sdsdf.com")
-        places.append(place)
+        places.append(place)*/
         
         
 }
@@ -89,7 +89,7 @@ class ViewController: UITableViewController { /*UIViewController, UITableViewDat
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath) as! PlaceCell
         
-        cell.thumbnailImageView.image = place.image
+        cell.thumbnailImageView.image = UIImage(data: place.image! as Data)
         cell.nameLabel.text = place.name
         cell.timeLabel.text = place.type
         cell.ingredientsLabel.text = place.location
@@ -123,7 +123,7 @@ class ViewController: UITableViewController { /*UIViewController, UITableViewDat
             
             let shareDefaultText = "Estoy visitando \(place.name) en la App del curso de iOS 10 con Juan Gabriel"
             
-            let activityController = UIActivityViewController(activityItems: [shareDefaultText, place.image], applicationActivities: nil)
+            let activityController = UIActivityViewController(activityItems: [shareDefaultText, UIImage(data: place.image! as Data)!], applicationActivities: nil)
             self.present(activityController, animated: true, completion: nil)
         }
         

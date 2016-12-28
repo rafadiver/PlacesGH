@@ -8,6 +8,9 @@
 
 
 import UIKit
+//import CoreData
+
+
 
 class AddPlaceViewController: UITableViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate{
 
@@ -62,6 +65,7 @@ class AddPlaceViewController: UITableViewController, UIImagePickerControllerDele
     
     @IBAction func savePressed(_ sender: UIBarButtonItem) {
    
+        /* 
         if let name = self.textFieldName.text,
                 let tipo = self.textFieldTipo.text,
                 let direccion = self.textFieldDireccion.text,
@@ -70,10 +74,24 @@ class AddPlaceViewController: UITableViewController, UIImagePickerControllerDele
                 let theImage = self.imageView.image,
                 let rating = self.rating {
         
-                self.place = Place(name: name, type: tipo, location: direccion, image: theImage, telefone: telefone, website: Web)
+            
+            
+            self.place = Place(name: name, type: tipo, location: direccion, image: theImage, telefone: telefone, website: Web)
                 self.place!.rating = rating
             print(self.place!.name)
-  
+ 
+          /*
+            if let container = UIApplication.shared() as? AppDelegate)?.persistentContainer {
+                let context = container.viewContext
+                self.place = NSEntityDescription.insertNewObject(forEntityName: "Place", into: context) as? Place
+                
+            }
+            */
+                
+            
+            
+            
+            
           self.performSegue(withIdentifier: "unwindToMainViewController", sender: self)
             
             
@@ -85,13 +103,16 @@ class AddPlaceViewController: UITableViewController, UIImagePickerControllerDele
             
             
         }
-        
-        
-        
-        
+        */
+ 
+ 
+ self.performSegue(withIdentifier: "unwindToMainViewController", sender: self)
+ 
+ 
+ 
     }
-        
-    
+ 
+ 
     let defaultColor = UIColor(red: 182.0/255.0, green: 196.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     let selectedColor = UIColor.red
     
